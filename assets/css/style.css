@@ -1,6 +1,7 @@
 /*Font settings*/
 * {
     font-family:'Courier New', Courier, monospace;
+    font-size: 2vw;
 }
 /*Responsive Layout*/
 @media screen and (max-width: 600px) {
@@ -12,17 +13,17 @@
 /*Links*/
 a {
     color:#caa2df;
-    text-decoration:underline;
-    text-shadow: 1px 1px #1e5c9b;
+    text-decoration: none;   
 }
 /*Image properties*/
 img {
     border: 3px dashed #caa2df;
-    border-radius: 3%;
+    border-radius: 6%;
 }
 /*Image hover effect*/
 img:hover {
-    box-shadow: 1px 1px 1px 1px #77a6d5;
+    box-shadow: 2px 2px 2px 2px #77a6d5;
+    transition: .3s ease;
 }
 /*Header background image*/
 header {
@@ -41,6 +42,7 @@ nav ul, nav li {
    list-style-type:none;
    padding:1%;
    font-size:2vw;
+   text-shadow: 2px 2px #1e5c9b;
 }
 /*Page header/title*/
 h1 {
@@ -69,31 +71,37 @@ main {
     padding: 3%;
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /*Work section*/
-#work {
-    position: relative;
-}
-/*Work section images*/
 #work img, .surf-report-text, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
-    margin-inline-start: 5vw;
+    margin-inline-start: 3vw;
 }
 .surf-report img {
-    max-width: 50vW;
+    width: 50vW;
+    object-fit: cover;
 }
 .wall img, .calculator img, .pastel-puzzles img, .bus-buddy img, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
     align-items: flex-start;
+    max-height: 25vw;
+    max-width: 20vw;
+    object-fit: cover;
 }
 .wall img, .calculator img, .pastel-puzzles img, .bus-buddy img{
-    max-height: 40vh;
-    max-width: 30vw;
+    height:40vw;
+    width: 40vw;
 }
 .surf-report-text, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
     position: relative;
-    bottom:5%;
+    bottom:6%;
     left:0%;
     background-color: #caa2df;
     padding: 3%;
     color: #FFFFFF;
-    border-radius: 3%;  
+    border-radius: 6%;
+     
+}
+/*Contact Section*/
+.contact {
+    margin: 0%;
 }
