@@ -23,6 +23,7 @@ img {
 /*Image hover effect*/
 img:hover {
     box-shadow: 2px 2px 2px 2px #77a6d5;
+    opacity: .5;
     transition: .3s ease;
 }
 /*Header background image*/
