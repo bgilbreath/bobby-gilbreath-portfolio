@@ -26,7 +26,7 @@ img:hover {
 }
 /*Header background image*/
 header {
-    background-image: url(/assets/images/header-img.jpg);
+    background-image: url(../images/header-img.jpg);
     background-size: 100%;
     background-position: 0% 0%;
     background-repeat: no-repeat;
