@@ -1,71 +1,97 @@
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
-
+/*Responsive Layout*/
+@media screen and (max-width: 600px) {
+    #work {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+/*Links*/
 a {
     color:#caa2df;
-    text-decoration: none;
+    text-decoration:underline;
+    text-shadow: 1px 1px #1e5c9b;
+    font-size:2vw;
 }
+/*Image properties*/
 img {
-    width:50%;
     border: 3px dashed #caa2df;
     border-radius: 3%;
 }
+/*Image hover effect*/
 img:hover {
-    box-shadow: 1px 1px 1px 1px #123456;
+    box-shadow: 1px 1px 1px 1px #77a6d5;
 }
+/*Header background image*/
+header {
+    background-image: url(/assets/images/header-img.jpg);
+    background-size: 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*Navigation*/
+nav ul, nav li {
+   display: flex;
+   justify-content: right;
+   text-decoration: underline;
+   color: #caa2df;
+   list-style-type:none;
+   padding:1%;
+}
+/*Page header/title*/
 h1 {
+    font-size: 4vw;
     padding:2%;
     color:#FFFFFF;
+    text-shadow: 3px 3px #caa2df;
 }
-.content {
-    text-align:right;
-    position:relative;
-    padding: 3%;
-    
-}
-.image-text {
-    position:absolute;
-}
-.about-me, .work, .contact {
-    columns: 1;
-
-}
-body {
-
-}
+/*Floating header settings*/
 h2, h3 {
     float:left;
     padding:5%;
-    columns:1;
     position:relative;
     font-size:150%;
     font-weight:bolder;
 }
-header {
-    background-color: #123456;
+/*About Me*/
+main {
+    position: relative;
+    margin: 0 auto;
+    max-width: 80%;
 }
-
-nav {
-
+.content {
+    text-align:justify;
+    padding: 3%;
+    display:flex;
+    flex-wrap: wrap;
 }
-
-li {
-    float: right;
-    display:block;
-    padding:1%;
+/*Work section*/
+#work {
+    position: relative;
 }
-
-ul {
-    list-style-type:none;
-
-  }
-
-nav ul {
-   display: flex;
-   justify-content: right;
-   text-decoration: underline;
-   color: #caa2df
-
-
+/*Work section images*/
+#work img, .surf-report-text, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
+    margin-inline-start: 5vw;
+}
+.surf-report img {
+    max-width: 50vW;
+}
+.wall img, .calculator img, .pastel-puzzles img, .bus-buddy img, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
+    align-items: flex-start;
+}
+.wall img, .calculator img, .pastel-puzzles img, .bus-buddy img{
+    max-height: 40vh;
+    max-width: 30vw;
+}
+.surf-report-text, .wall-text, .calculator-text, .pastel-puzzles-text, .bus-buddy-text {
+    position: relative;
+    bottom:5%;
+    left:0%;
+    background-color: #caa2df;
+    padding: 3%;
+    color: #FFFFFF;
+    border-radius: 3%;  
 }
