@@ -15,6 +15,10 @@ a {
     color:#caa2df;
     text-decoration: none;   
 }
+/*Link Hover Properties*/
+a:hover {
+    cursor: pointer;
+}
 /*Image properties*/
 img {
     border: 3px dashed #caa2df;
@@ -25,6 +29,7 @@ img:hover {
     box-shadow: 2px 2px 2px 2px #77a6d5;
     opacity: .5;
     transition: .3s ease;
+    cursor: pointer;
 }
 /*Header background image*/
 header {
