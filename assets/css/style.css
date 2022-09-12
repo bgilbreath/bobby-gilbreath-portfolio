@@ -13,7 +13,6 @@ a {
     color:#caa2df;
     text-decoration:underline;
     text-shadow: 1px 1px #1e5c9b;
-    font-size:2vw;
 }
 /*Image properties*/
 img {
@@ -40,6 +39,7 @@ nav ul, nav li {
    color: #caa2df;
    list-style-type:none;
    padding:1%;
+   font-size:2vw;
 }
 /*Page header/title*/
 h1 {
@@ -47,6 +47,7 @@ h1 {
     padding:2%;
     color:#FFFFFF;
     text-shadow: 3px 3px #caa2df;
+    margin-top: 0;
 }
 /*Floating header settings*/
 h2, h3 {
