@@ -9,7 +9,7 @@ A landing page for my portfolio has been created. With links to work, contact, a
 
 ## Installation
 
-Project is a completed webpage, that can be visited via URL, https://bgilbreath.github.io/bobby-gilbreath-portfolio/
+Project is a completed webpage, that can be visited via URL, https://bgilbreath.github.io/secure-password-generator/
 
 ## Usage
 
